@@ -107,6 +107,20 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+h2 {
+  color: #2d314d;
+  font-weight: 300;
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
@@ -431,11 +445,62 @@ button:hover, .button:hover {
   margin-bottom: 2.25rem;
 }
 
+.feature {
+  margin-top: 1.8125rem;
+}
+
+@media (max-width: 63.9375em) {
+  .feature {
+    text-align: center;
+  }
+}
+
+.feature h2 {
+  margin-bottom: 1.3125rem;
+}
+
 @media (min-width: 64em) {
+  .feature h2 {
+    margin-bottom: 2.125rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature {
+    margin-top: 4.25rem;
+  }
+}
+
+.feature p {
+  margin-bottom: 3.375;
+}
+
+@media (min-width: 64em) {
+  .feature p {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 40em) {
   .feature__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.feature__item {
+  padding: 0.9375rem;
+  border: 1px solid purple;
+}
+
+@media (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
   }
 }
 
@@ -444,6 +509,17 @@ button:hover, .button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+.feature__icon img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+@media (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.8125rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
