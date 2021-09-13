@@ -1,8 +1,13 @@
 .feature {
-    margin-top: 1.8125rem;
-
-    @include breakpoint-down(medium) {
-        text-align: center;
+    background-color: $lightGrayishBlue;
+    padding-top: 1.8125rem;
+    font-size: 0.875rem;
+    padding-bottom:  4rem;
+    @include breakpoint-up(large) {
+        padding-bottom:  5.125rem;
+    }
+    @include breakpoint-up(large) {
+        padding-top: 4.25rem;
     }
 
     h2 {
@@ -13,13 +18,9 @@
         }
     }
 
-    @include breakpoint-up(large) {
-        margin-top: 4.25rem;
-    }
 
     p {
         margin-bottom: 3.375;
-
         @include breakpoint-up(large) {
             margin-bottom: 3.75rem;
         }
@@ -34,7 +35,6 @@
 
     &__item {
         padding: 0.9375rem;
-        border: 1px solid purple;
 
         @include breakpoint-up(medium) {
             flex: 1 0 50%;
@@ -50,12 +50,25 @@
             width: 4.5rem;
             height: 4.5rem;
         }
+        margin-bottom: 1.75rem;
         @include breakpoint-up(large){
             margin-bottom: 2.8125rem;
         }
     }
+    &__title {
+        color: $darkBlue;
+        margin-bottom: 1.5rem;
+        @include breakpoint-up(large){
+            margin-bottom: 2.5625rem;
+        }
+        font-size: 0.875rem;
+        @include breakpoint-up(large) {
+            font-size:  1.0625rem;
+        }
+    
+    }
 
-    &__title {}
-
-    &__description {}
+    &__description {
+        line-height: 1.7;
+    }
 }

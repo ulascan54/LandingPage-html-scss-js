@@ -73,6 +73,12 @@ a, a:visited, a:hover{
     padding-left: 1.5rem;
   }
 }
+
+.text-center-sm{
+  @include breakpoint-down(medium) {
+    text-align: center;
+}
+}
 //flexbox
 .flex{
   display: flex;
@@ -121,3 +127,4 @@ button, .button{
     display: none;
   }
 }
+
