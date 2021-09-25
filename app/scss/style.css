@@ -225,6 +225,10 @@ button:hover, .button:hover {
   }
 }
 
+.header .container {
+  z-index: 30;
+}
+
 .header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -246,6 +250,7 @@ button:hover, .button:hover {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 20;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
 }
@@ -287,6 +292,7 @@ button:hover, .button:hover {
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
+  z-index: 50;
 }
 
 .header__menu a {
@@ -555,5 +561,30 @@ button:hover, .button:hover {
 
 .feature__description {
   line-height: 1.7;
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.article__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */

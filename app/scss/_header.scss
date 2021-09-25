@@ -1,4 +1,7 @@
 .header {
+  .container{
+    z-index: 30;
+  }
 
   //hamburger open styles
   &.open {
@@ -27,6 +30,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 20;
     background-image: linear-gradient($darkBlue, transparent);
   }
 
@@ -70,6 +74,7 @@
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
+    z-index: 50;
     a{
       padding: 0.625rem;
       display: block;
